@@ -1,0 +1,310 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body  {	
+	background-image: url("../images/berry.jpg");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+div#frame {
+	margin: 25px auto;
+	padding: 20px 30px 20px 20px;
+	width: 50%;
+	min-width: 900px;
+	background-color: #ffffff;	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
+	border: 2px solid #009926;
+	border-radius: 8px;
+	box-shadow: 0px 0px 90px 2px #008020;
+}
+
+p {
+	margin: 20px 0px;
+}
+
+a {
+	color: #008020; 
+}
+
+a:link, a:visited { 
+	text-decoration: none; 
+}
+
+a:hover, a:focus { 
+    text-decoration: underline; 
+}
+
+/* Header */
+header {
+	height: 160px;
+	border-bottom: 2px solid #e8b417;
+}
+	
+header img { 
+	float: left; 
+} 
+
+header div#header-line-1 {
+	font-size: 300%;
+	font-weight: bold;	
+	text-align: right;
+	color: #ecc03b;
+	text-shadow: 2px 2px 2px black;
+}
+
+header div#header-line-2 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	color: #008020;
+}
+
+/* aside */
+aside {
+	width: 230px;
+	float: left;
+	margin: 30px 10px 0px 0px;
+}
+
+aside div.sidebar-title {
+	font-size: 115%;
+	font-weight: bold;
+	color: #d1a215;
+}
+
+aside ul {
+	margin: 15px 0px 0px 15px;
+}
+
+aside ul li {
+	margin: 15px 0px 0px 0px;
+}
+
+aside ul li a{
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Main */
+main {
+	margin: 20px 0;
+	padding-left: 20px;
+	float: left;
+	width: 638px;
+	min-height: 600px;
+	border-left: 2px solid #e8b417;
+}
+
+main h1 { 
+	margin: 0;
+	font-size: 200%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	margin: 25px 0px;
+	font-size: 125%;
+}
+
+main h3 {	
+	font-size: 110%;
+}
+
+main ul#product-categories {
+	list-style-type: none;
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;
+}
+
+main ul#product-categories p{
+	margin-top: 5px;
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 2px #ecc03b;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
+	width: 180px;
+	padding: 1em 0;
+	display: block;
+    text-align: center;    
+    text-decoration: none;  
+	font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	
+	font-weight: bold;
+}
+
+/* Footer */
+footer {
+	clear: left;
+	border-top: 2px solid #e8b417;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+}
+
+
+/* Styles for the form*/
+
+/* Margin and padding for form fieldsets*/
+
+fieldset {
+		margin: 1em 0;
+		padding-top: 0.5em;
+    
+}
+
+/* Legend font is bold and color grey with 85% font size*/
+
+legend {
+		margin-bottom: 0.5em;
+		font-weight: bold;
+		color: grey;
+		font-size: 85%;
+}
+
+/* Form labels were floated left with text aligned to the right*/
+
+label { 
+    	float: left;
+	width: 12em;
+	text-align: right;
+}
+
+/*Font-size for the controls  was set at 90% font size*/
+
+label, input, select {
+				font-size: 90%;
+	
+}
+
+
+input, select {
+			width: 15em;
+			margin: 0 0 0.5em 0.5em;
+			text-align: left;
+    
+}
+
+/* Styles for the required input fields is 2px orange*/
+
+input:required, input[required] {
+					border: 2px solid orange;
+}
+
+
+/* Styles for valid input fields. Border valid fields are styled as black*/
+
+input:valid {
+		border: 1px solid black;
+}
+
+/*id selector created for Payment Method*/
+
+#payment_method {
+			
+			margin: 0 6em 0 1em;
+}
+
+/*Payment method label width set to auto with margin specification
+for reducing label spacing and alignment closer to the radio button*/
+
+label[for="BillMe"] {
+			
+			width: auto;
+			margin: 0 3em 0 0;			
+}
+
+label[for="CreditCard"] {
+			
+			
+			width: auto;			
+			margin: 0 .5em 0 0;
+}
+
+/*Radio button floated to left of label and width set to auto*/
+
+input[type="radio"]{
+			float: left;
+			width: auto;
+			margin: 0 .1em 0 1em;
+}
+
+/*id selector "expirationdate_month" width is 7em*/
+
+#expirationdate_month [name="expirationdate"] {
+								width: 7em;
+} 
+
+/*id selector "expirationdate_year" width is 5em*/
+
+#expirationdate_year [name="expirationdate"] {
+								width: 5em;
+
+}
+
+/* expirationdate_year id selector is aligned in expiration date line*/
+
+#expirationdate_year {
+			display: inline;
+} 
+
+
+/* Width and height for the submit and reset button and clear left float*/
+
+input[type="submit"] {
+				
+				height: 2em;
+				width: 10em;
+				text-align: center;
+				margin: 0 0 0 12em;
+				clear: both;
+}
+
+input[type="reset"] {
+				
+				height: 2em;
+				width: 10em;
+				text-align: center;
+				margin: 0 .5em 0 .5em;
+}
